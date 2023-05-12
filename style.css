@@ -1,0 +1,520 @@
+body {
+    font-family: "Quicksand", sans-serif;
+    --primary-color: hsl(243, 45%, 30%);
+    --secondary-color: #96ae00;
+    background-color: #f2f2f6;
+}
+/* header */
+.header .navbar {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+.container .navbar-brand img {
+    width: 85%;
+}
+.header .nav-link {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-item {
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.header .nav-item:hover a {
+    color: var(--secondary-color);
+}
+.navbar-icon a {
+    padding: 13px 12px;
+    background-color: rgba(231, 202, 222, 0.24);
+    border-radius: 5px;
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* SLIDE */
+.slide {
+    margin-top: 60px;
+}
+.carousel-caption {
+    text-align: left;
+    bottom: 50%;
+    transform: translateY(50%);
+    padding: 0;
+}
+.carousel-caption h3 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.carousel-caption h1 {
+    color: var(--primary-color);
+    font-family: "Nerko One", cursive;
+    font-size: 80px;
+}
+.carousel-caption p {
+    color: black;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.carousel-caption button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    font-weight: 500;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+.carousel-caption button:hover,
+.footer .form button:hover {
+    background-color: var(--primary-color);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    background-size: 50%;
+}
+.carousel-control-prev {
+    font-size: 20px;
+    font-weight: 600;
+}
+.carousel-control-next {
+    font-size: 20px;
+}
+
+/* CATE */
+.cate {
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    transition: 0.8s;
+    margin-top: 10px;
+}
+.cate:hover {
+    transform: translateY(-15px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cate img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.cate h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.cate p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.807);
+}
+
+.product {
+    text-align: center;
+    margin: 30px 0;
+}
+/* HEADLINE */
+/* .headline {
+	margin: 30px 0;
+} */
+.headline h3 {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.headline h2 {
+    font-family: "Nerko One", cursive;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+.headline h1 {
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+.headline h1 span {
+    color: var(--primary-color);
+}
+.headline p {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* PRODUCTS */
+.product .nav-item {
+    margin-bottom: 20px;
+}
+.product .nav-item ul {
+    align-items: center;
+}
+.product .nav-item a {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: 0.5s;
+}
+.product .nav-item a:hover {
+    color: var(--secondary-color);
+}
+.product .nav-link.active {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+.product .tab-content .card {
+    text-align: left;
+    margin-top: 10px;
+}
+.product .tab-content .card-img {
+    position: relative;
+}
+.product .tab-content .card-sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.product .tab-content .card .card-body p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.product .tab-content .card .card-body h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.product .tab-content .card .card-star i {
+    color: rgb(238, 197, 14);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.product .tab-content .card .card-price p {
+    font-size: 20px;
+    color: red;
+    font-weight: 500;
+}
+.product .tab-content .card .card-price span {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.664);
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.product .tab-content .card .card-sale p {
+    background-color: rgb(241, 175, 175);
+    width: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(247, 72, 72);
+    text-align: center;
+}
+.product .tab-content .card .card-overlay {
+    text-align: center;
+    position: absolute;
+    padding: 20px 0;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.842);
+    height: 100%;
+    top: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.product .tab-content .card:hover .card-overlay {
+    top: 0;
+    opacity: 1;
+}
+.product .tab-content .card .card-overlay button {
+    background-color: var(--secondary-color);
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+.product .tab-content .card .card-overlay .content {
+    text-align: start;
+    padding: 30px;
+}
+.product .tab-content .card .card-overlay .content h6 {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+/* THUMB */
+.thumb {
+    margin: 80px 0;
+}
+
+.thumb .content h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--primary-color);
+}
+.thumb button {
+    background-color: var(--secondary-color);
+    border: none;
+    width: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.thumb button:hover {
+    background-color: var(--primary-color);
+}
+
+/* BANNER */
+.banner .card {
+    margin-top: 10px;
+}
+.banner h5 {
+    font-size: 16px;
+    color: yellow;
+    margin-top: 10px;
+}
+
+.banner h4 {
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.banner h4 br {
+    margin-top: 5px;
+}
+.banner p {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* NEWS */
+.news .card {
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+/* .new .card .card-thumb {
+    border-top-left-radius: 20px;
+} */
+.news .card img {
+    border-radius: 20px 20px 0 0;
+    transition: 0.8s;
+}
+
+.news .card:hover img {
+    transform: scale(1.1);
+}
+.news .card .card-thumb {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.news .card-body h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.news .card-body p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+.news .card-body a {
+    color: var(--secondary-color);
+    font-size: 16px;
+    margin-bottom: 1px;
+    font-weight: 800;
+}
+
+/* .FOOTER */
+.footer {
+    background-color: #2d2a6e;
+    color: #d9d7ff;
+    padding: 6px !important;
+}
+.footer .text {
+    margin-top: 30px;
+}
+.footer .text h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+.footer .text p {
+    font-weight: 500;
+    font-size: 14px;
+}
+.footer .text a {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.footer .social p {
+    font-size: 14px;
+}
+.footer .time p {
+    font-size: 14px;
+}
+.footer .nav-item {
+    padding: 0;
+    transition: 1s;
+}
+.footer .nav-link {
+    font-size: 14px;
+    color: #d9d7ff;
+    padding: 3px 0;
+    transition: 0.5s;
+}
+.footer .nav-item:hover .nav-link {
+    margin-left: 10px;
+}
+.footer .form {
+    background-color: white;
+    padding: 10px;
+}
+.footer .form input {
+    border: none;
+    font-size: 14px;
+}
+.footer .form input:focus {
+    box-shadow: none;
+}
+.footer .form button {
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition: 0.5s;
+}
+
+@media (max-width: 1369px) {
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption h1 {
+        font-size: 50px;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+    .carousel-caption button {
+        padding: 7px 0;
+    }
+    .carousel-control-prev {
+        left: -15px;
+    }
+    .carousel-control-next {
+        right: -15px;
+    }
+}
+@media (max-width: 991px) {
+    .header .navbar-collapse {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        padding: 20px 50px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+    .carousel-caption p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .carousel-caption button {
+        padding: 5px 0;
+    }
+    .carousel-control-prev {
+        left: -10px;
+    }
+    .carousel-control-next {
+        right: -10px;
+    }
+}
+@media (max-width: 767px) {
+    .carousel-caption h3 {
+        display: none;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption p {
+        display: none;
+    }
+    .cate {
+        margin: 10px 0;
+    }
+    .product .nav-item a {
+        font-size: 12px;
+    }
+    .product .row > * {
+        padding-right: 0;
+    }
+
+    .carousel-caption button {
+        display: none;
+    }
+    .carousel-control-prev {
+        left: -10px;
+    }
+    .carousel-control-next {
+        right: -10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+    .footer .row {
+        display: block;
+    }
+    .footer .row .col-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 378px) {
+    .header .navbar-icon {
+        display: none;
+    }
+    .carousel-caption h1 {
+        font-size: 16px;
+    }
+    .product .tab-content .card .card-price p {
+        font-size: 12px;
+    }
+    .product .tab-content .card .card-price span {
+        font-size: 10px;
+    }
+    .banner h5 {
+        margin-top: 10px;
+    }
+    .banner h4 {
+        margin-top: 10px;
+    }
+    .banner p {
+        margin-top: 10px;
+    }
+    .news .card-body a {
+        display: none;
+    }
+}
